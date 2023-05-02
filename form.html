@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+	<link rel = "stylesheet" href="style.css">
+</head>
+<body style="background-color:#D142C4; 
+background-image: url('bg.jpg'); 
+background-repeat: no-repeat;">
+	<form action = "https://www.w3schools.com/html/html_forms.asp">
+	
+			
+		
+			<h1 style="color:#001070"> REGISTRATION FORM</h1>
+<br>
+
+	<div>
+		<label for="name"> NAME:</label>
+		<input type = "text" id ="name" name="name" required>
+		</div>
+	
+		<br>
+
+		<div>
+			<label for="address"> ADDRESS:</label><br>
+		<textarea type= "text" name="address" rows ="10" cols="50" required></textarea>
+		</div>
+			<br>
+			<div>
+			<label for="Permant">  PERMANENT ADDRESS:</label>
+			<input type ="radio" name ="choose" id ="yes" value="yes" required>
+			<label for="yes"> Yes</label>
+			<input type ="radio" name ="choose" id ="No" value="No">
+			<label for="yes">No</label>
+		</div>
+		<br>
+		<label for="phone"> PHONE NO:</label>
+		<input type = "tel" id ="phone" name="phone" pattern="[0-9]{10}" required>
+		<br>
+			
+				<br>
+			<label for="state">STATE</label>
+			<select name ="state" id="state" required>
+				<option value="">None</option>
+				<option value="TamilNadu">TamilNadu</option>
+				<option value="Kerala">Kerala</option>
+				<option value="karnataka">Karnataka</option>
+			</select>
+			<br>
+			<br>
+			<label for ="upload"> ADDRESS PROOF </label>
+			<input type ="file" value ="upload file">
+			<br>
+			<br>
+			<div>
+				<input type="checkbox" required> 
+				<label for="declaration"> I HERE BY DECLARE THE ABOVE INFORMATION IS TRUE </label>
+			</div>
+			<br>
+			<div class ="sub">
+			<input type = "submit" value ="submit"></div>
+			<div class = "res">
+			<input type = "reset" value ="reset"></div>
+
+
+	</form>
+
+</body>
+</html>
